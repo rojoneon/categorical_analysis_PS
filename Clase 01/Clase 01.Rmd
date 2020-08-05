@@ -1,17 +1,17 @@
 ---
 title: "Clase 01"
-author: "rojoneon"
-date: "8/4/2020"
-output:
-  pdf_document: default
-  html_document: default
----
-
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
  encoding=encoding,
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+author: "rojoneon"
+date: "8/4/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
